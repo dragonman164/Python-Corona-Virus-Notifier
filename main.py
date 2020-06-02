@@ -15,7 +15,7 @@ def getData(url):
     r = requests.get(url)
     return r.text
 
-#notify("Harry","let's stop this ")
+
 myhtmldata = getData("https://www.mohfw.gov.in/")
 soup = BeautifulSoup(myhtmldata,'html.parser')
 #print(soup.prettify())
